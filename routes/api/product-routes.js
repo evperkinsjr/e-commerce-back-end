@@ -13,7 +13,7 @@ router.get('/', async (req, res) => {
     res.status(200).json(productData);
   }
   catch (err) {
-    res.status(500).json(err);
+    res.status(400).json(err);
   };
 });
 
@@ -31,7 +31,7 @@ router.get('/:id', async (req, res) => {
     };
   }
   catch (err) {
-    res.status(500).json(err);
+    res.status(400).json(err);
   }
 });
 
@@ -125,7 +125,7 @@ router.delete('/:id', async (req, res) => {
     }
   }
   catch (err) {
-    res.status(500).json(err);
+    res.status(400).json(err);
   }
 });
 
