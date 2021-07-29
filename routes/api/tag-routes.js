@@ -69,7 +69,8 @@ router.put('/:id', async (req, res) => {
     } else {
       res.status(200).json([{'message': 'Tag updated.'}, {id: updateTag.id, tag_name: updateTag.tag_name}]);
     }
-  } catch (err) {
+  }
+  catch (err) {
     res.status(400).json(err);
   }
 });
