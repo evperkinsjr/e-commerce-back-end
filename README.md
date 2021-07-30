@@ -23,8 +23,8 @@ https://user-images.githubusercontent.com/79537431/127587266-af8f69c1-1303-40a2-
 <p>&nbsp</p>
 
 ## Installation
-- Install the required dependencies, run the following command: npm i
-- Create the database: mysql
+- Install the required dependencies: npm i
+- Create the database (enter password when prompted): mysql -u root -p OR mysql -u {username} -p
 - Seed the database: npm run seed
 - Start the PORT: node server.js
 <p>&nbsp</p>
